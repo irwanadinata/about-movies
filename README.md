@@ -25,7 +25,7 @@
 - 🔐 **Authentication System**: Secure user authentication powered by **Firebase**.
 - 📱 **Mobile-First & Fully Responsive**: Fluid CSS Grid layouts ensuring a flawless experience on both desktop and mobile devices.
 - 💎 **Premium UI/UX**: Features glassmorphism navigation, smooth page transitions, and CSS-based shimmer skeleton loaders for a modern feel.
-- 🛡️ **Secure API Proxy**: Built-in proxy architecture (Express for dev, Serverless for Vercel) to protect sensitive AI API keys from being exposed on the client side.
+- 🛡️ **Secure API Proxy**: Built-in proxy architecture to protect sensitive AI API keys from being exposed on the client side.
 - 🔍 **Advanced Search**: Quickly search for any movie in the TMDB database.
 
 ## 🛠️ Tech Stack
