@@ -33,7 +33,6 @@
 - **Frontend:** React.js, React Router v6, Vanilla CSS (Custom Design System)
 - **Build Tool:** Vite
 - **AI Integration:** Google Generative AI (Gemini REST API)
-- **Backend / Proxy:** Node.js, Vercel Serverless Functions (Prod)
 - **Database / Auth:** Firebase
 - **External API:** TMDB (The Movie Database) API
 
