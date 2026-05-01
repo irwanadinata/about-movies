@@ -1,6 +1,37 @@
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+}
+
 .list-cards {
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: center;
-    padding: 0 3rem 3rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 3rem 3rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .search-bar-wrapper {
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+    gap: 0.5rem;
+  }
+
+  .list-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0;
+    justify-content: unset;
+  }
+}
+
+.search-empty {
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  margin-top: 3rem;
 }

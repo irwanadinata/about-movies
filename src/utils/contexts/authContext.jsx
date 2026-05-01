@@ -1,11 +1,11 @@
-import { useContext, createContext, useEffect, useState } from 'react';
+import { useContext, createContext, useEffect, useState } from "react";
 import {
   GoogleAuthProvider,
   signInWithPopup,
   signOut,
   onAuthStateChanged,
-} from 'firebase/auth';
-import { auth } from '../firebase/firebase';
+} from "firebase/auth";
+import { auth } from "../firebase/firebase";
 
 const AuthContext = createContext();
 
@@ -18,8 +18,8 @@ export const AuthContextProvider = ({ children }) => {
   };
 
   const logOut = () => {
-      signOut(auth)
-  }
+    signOut(auth);
+  };
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {

@@ -1,53 +1,133 @@
-.poster-image{
-    height: 600px;
+.poster-image {
+  height: 600px;
 }
 
 .posterImage > img {
-    margin: auto;
-    display: block;
-    width: 100%;
+  margin: auto;
+  display: block;
+  width: 100%;
 }
 
 .posterImage-overlay {
-    position: absolute;
-    padding: 5rem;
-    bottom: 0px;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: flex-start;
-    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
-    opacity: 1;
-    transition: opacity .3s;
-}   
+  position: absolute;
+  padding: 5rem;
+  bottom: 0px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  opacity: 1;
+  transition: opacity 0.3s;
+}
 
 .posterImage-overlay:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .posterImage-title {
-    font-weight: 900;
-    font-size: 4rem;
-    margin-bottom: 0.4rem;
-    text-align: left;
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
 }
 
 .posterImage-runtime {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .posterImage-rating {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 .posterImage-description {
-    font-style: italic;
-    font-size: 1rem;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .poster-image {
+    height: 280px;
+  }
+
+  .posterImage-overlay {
+    padding: 1.25rem;
+    height: 75%;
+  }
+
+  .posterImage-title {
+    font-size: 1.4rem;
     margin-bottom: 0.25rem;
-    display: flex;
-    text-align: left;
-    width: 50%;
+  }
+
+  .posterImage-runtime {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .posterImage-rating {
+    margin-left: 1rem;
+  }
+}
+
+.skeleton-banner {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-color: #1a1a1a;
+}
+
+.skeleton-banner-img {
+  width: 100%;
+  height: 100%;
+}
+
+.skeleton-banner-title {
+  width: 40%;
+  height: 4rem;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+}
+
+.skeleton-banner-runtime {
+  width: 20%;
+  height: 2rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.skeleton-banner-desc {
+  width: 50%;
+  height: 1rem;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .skeleton-banner {
+    height: 280px;
+  }
+
+  .skeleton-banner-title {
+    height: 1.4rem;
+    margin-bottom: 0.25rem;
+    width: 60%;
+  }
+
+  .skeleton-banner-runtime {
+    height: 0.9rem;
+    margin-bottom: 0.5rem;
+    width: 30%;
+  }
+
+  .skeleton-banner-desc {
+    width: 100%;
+    height: 0.75rem;
+  }
 }

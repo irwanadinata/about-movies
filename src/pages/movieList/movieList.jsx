@@ -17,15 +17,15 @@ const MovieList = () => {
   const getData = () => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=${apiKey}&language=en-US&page=1`
+        `https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=${apiKey}&language=en-US&page=1`,
       )
       .then((response) => {
         setMovieList(response.data.results);
       })
       .catch((error) => {
         Swal.fire({
-          icon: 'error',
-          title: 'Error',
+          icon: "error",
+          title: "Error",
           text: error.message,
         });
       });

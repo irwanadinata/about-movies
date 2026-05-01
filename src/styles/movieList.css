@@ -1,14 +1,32 @@
 .movie-list {
-    padding: 0 3rem 3rem 3rem;
+  padding: 0 3rem 3rem 3rem;
 }
 
 .list-title {
-font-size: 1.75rem;
-margin:  2.5rem;
+  font-size: 1.75rem;
+  margin: 2.5rem;
 }
 
 .list-cards {
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .movie-list {
+    padding: 0 0.5rem 2rem 0.5rem;
+  }
+
+  .list-title {
+    font-size: 1.2rem;
+    margin: 1rem 0.75rem;
+  }
+
+  .list-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    justify-content: unset;
+  }
 }
