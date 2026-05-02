@@ -14,6 +14,11 @@
 
 <br />
 
+## ❤️ Live Demo
+https://about-movies-tan.vercel.app/
+<img width="1893" height="1027" alt="image" src="https://github.com/user-attachments/assets/a072e146-f9cc-4557-a555-9034f809d7a8" />
+
+
 ## 🌟 Overview
 
 **About Movies** is a sleek, highly responsive movie discovery web application. It allows users to explore the latest popular, top-rated, and upcoming movies seamlessly. Built with modern web technologies, the platform features a premium UI with glassmorphism effects, a dynamic skeleton loading system, and an integrated **AI Assistant** powered by Google's Gemini 2.5 Flash to help users find the perfect movie recommendations.
